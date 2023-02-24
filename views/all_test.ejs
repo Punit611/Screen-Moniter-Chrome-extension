@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+  <head>
+    <link rel="stylesheet" href="/blog.css">
+  </head>
+
+  <div>
+    <h1 style="color: red; margin:50px; text-align:center">All Tests</h1>
+    <div class="container">
+      <div class="row">
+        <% for(let i in all_test){ %>
+          <div class="col-12 col-sm-8 col-md-6 col-lg-4" style="margin:20px 0px;">
+            <div class="card" style="margin: 10px;">
+              <a href="<%='/testdetails?name=&email=&test='+all_test[i]%>">
+
+                <div class="card-body">
+                  <h4 class="card-title" style="text-align: center;">
+                    <%= all_test[i]%>
+                  </h4>
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <% } %>
+      </div>
+    </div>
+  </div>
+  <%- include('partials/footer') %>

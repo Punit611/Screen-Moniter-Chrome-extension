@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+  <head>
+    <link rel="stylesheet" href="/blog.css">
+  </head>
+
+  <div>
+    <h1 style="color: rgb(122, 46, 46); margin:50px; text-align:center">All users of <%= all_users[0].test%> test</h1>
+    <div class="container">
+      <div class="row">
+        <% for(let i in all_users){ %>
+          <div class="col-12 col-sm-8 col-md-6 col-lg-4" style="margin:20px 0px;">
+            <div class="card" style="margin: 10px;">
+                          
+              <a href="<%='/userdetails?name='+all_users[i].name+'&email='+all_users[i].email+'&test='+all_users[i].test%>">
+
+                <div class="card-body">
+                  <h4 class="card-title" style="text-align: center;">
+                    <%= all_users[i].name%>
+                  </h4>
+                  <h6 style="text-align: center;">
+                    <%= all_users[i].email%>
+                  </h6>
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <% } %>
+      </div>
+    </div>
+  </div>
+  <%- include('partials/footer') %>

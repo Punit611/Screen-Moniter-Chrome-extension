@@ -1,0 +1,61 @@
+body {
+  padding: 2rem 0rem;
+}
+
+.card-img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+.contain {
+  position: relative;
+  text-align: center;
+  /* color: rgb(227, 16, 16);
+  background-color: beige; */
+
+}
+.top-left {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
+
+.card-title {
+  margin-bottom: 0.3rem;
+}
+
+.cat {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.fa-users {
+  margin-left: 1rem;
+}
+
+.card-footer {
+  font-size: 0.8rem;
+}
+
+.nav_btn {
+  background-color: rgb(183, 255, 255);
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  border: 2px solid yellow;
+  
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+};
+

@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+  <head>
+    <link rel="stylesheet" href="/blog.css">
+  </head>
+
+  <div>
+    <h1 style="color: rgb(122, 46, 46); margin:50px; text-align:center">Images of users  <%= all_data[0].name%></h1>
+    <div class="container">
+      <div class="row">
+        <% for(let i in all_data){ %>
+          <div class="col-12 col-sm-8 col-md-6 col-lg-4" style="margin:20px 0px; width: fit-content;">
+            <div class="card" style="margin: 0px; width: auto;">
+              
+                <div class="card-body" style="text-align: center;">
+                  <h6 style="text-align: center;">
+                  <%= all_data[i].time%>
+                  </h6>
+                  <img style="height: 200px; width: 250px; margin: 10px;" src="<%='uploads/'+ all_data[i].screen_image.filename%>" alt="<%='uploads/'+ all_data[i].screen_image.filename%>">
+                  <img style="height: 200px; width: 250px; margin: 10px;" src="<%='uploads/'+ all_data[i].user_image.filename%>" alt="<%='uploads/'+ all_data[i].user_image.filename%>">
+                </div>
+              
+            </div>
+          </div>
+          <% } %>
+      </div>
+    </div>
+  </div>
+  <%- include('partials/footer') %>
