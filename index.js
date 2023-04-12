@@ -10,8 +10,8 @@ const cors = require('cors');
 
 const port =process.env.PORT || 3000;
 // Punnit611
-const pass="punitQuiz";
-const MONGODB_URI="mongodb://localhost:27017/chrome_extension_backend";
+const pass="Punit611";
+const MONGODB_URI="mongodb+srv://punitsehrawat423:Punit611@cluster0.5jazrou.mongodb.net/test";
 
 const app=express();
 
